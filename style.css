@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+    
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+#cursor{
+    position: fixed;
+    background-color: rgb(224, 254, 83);
+    z-index: 9999;
+    height: 10px;
+    width: 10px;
+    border: none; 
+    border-radius: 50%;
+}
+
+.page1{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#main{
+    display: none;
+    background-image: url('https://media.about.nike.com/img/41e1d61b-55cb-4659-bc3e-76a70e0cf8fa/nike-blazer-low-x-chevy-surf-blue-1.jpeg?m=eyJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMH0sIndlYnAiOnsicXVhbGl0eSI6MTAwfSwiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjE0MCwid2lkdGgiOjMyMDAsImhlaWdodCI6MjEzMn0sInJlc2l6ZSI6eyJ3aWR0aCI6OTAwfX19&s=556b95858b5e88eb4449f5507886190d66da5684640fb09985f6b070d9b1de84');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.5vw 2.5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.intro{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+nav{
+    padding: 10px 25px;
+    color: white;
+    border-radius: 999px;
+    height: 60px;
+    background-color: rgba(76, 76, 76, 0.4);
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nike-logo{
+    height: 30px;
+}
+
+.middle{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.middle li{
+    list-style-type: none;
+}
+
+.search{
+    color: black;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    padding: 10px;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 999px;
+    background-color: white;
+}
+
+.search input{
+    background-color: white;
+    height: 40px;
+    width: 100px;
+}
+
+input{
+    border: none;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.page1 h1{
+    padding: 3%;
+    position: absolute;
+    word-break: break-word;
+    /* left: 70%; */
+    /* top: 50%; */
+    bottom: 0;
+    left: 60%;
+    line-height: 0.9em;
+    font-size: 13vw;
+    color: lightblue;
+    text-align: right;
+    mix-blend-mode: color-dodge;
+}
+
+.page1 .view-more{
+    height: 9vh;
+    width: 14vw;
+    background-color: white;
+    border: none;
+    border-radius: 999px;
+    font-size: x-large;
+    position: absolute;
+    bottom: 5%;
+}
+
+.page2{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.page2 h1{
+    color: white;
+    padding: 2.5vw 4vw;
+    font-size: 6vw;
+    font-family: sans-serif;
+}

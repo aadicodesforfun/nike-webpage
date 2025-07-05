@@ -1,0 +1,74 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# macOS folder attributes
+Icon?
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+
+# macOS tags
+.TemporaryItems
+.fseventsd
+.com.apple.timemachine.donotpresent
+.apdisk
+
+# VSCode
+.vscode/
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata
+*.xcuserdatad
+DerivedData/
+*.hmap
+*.ipa
+*.xcuserstate
+*.xcscmblueprint
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Python (if needed)
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Environment files
+.env
+.env.*
+
+# JetBrains IDEs (e.g., IntelliJ, PyCharm)
+.idea/
+
+# Trash
+*.swp
+*.swo
+*.tmp
+
+# Others
+*.bak
+*~
