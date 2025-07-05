@@ -1,7 +1,6 @@
 const introVideo = document.querySelector('.intro');
 const main = document.querySelector('#main');
 
-
 // document.addEventListener('mousemove', function(dets) {
 //     gsap.to('#cursor', {
 //         x: dets.x - 5,
@@ -24,7 +23,7 @@ function mainPageAppears(){
     nav.style.display = "flex";
 }
 
-main.style.display = 'block' // remove this to play the intro video
+main.style.display = 'block' // uncomment this to play the intro video
 
 let tl = gsap.timeline();
 
@@ -95,7 +94,88 @@ gsap.from('.page1 .view-more', {
 
 gsap.from('.slogan-top', {
     opacity: 0,
-    x: -400,
+    y: 60,
     duration: 1,
     delay: 2, //make it 10 when the intro video is present
+})
+
+// add event listerners for the menu 
+document.querySelector('.new-btn').addEventListener('mouseenter', () => {
+    document.querySelector('.new').style.display = "flex";
+    gsap.fromTo('.new',
+        {scaleY: 0, scaleX: 0.5 },
+        {
+        scaleY: 1,
+        scaleX: 1,
+        duration: 0.9,
+        ease: "elastic.out(1, 0.5)"
+    })
+})
+
+document.querySelector('.new-btn').addEventListener('mouseleave', () => {
+    document.querySelector('.new').style.display = "none";
+})
+
+document.querySelector('.men-btn').addEventListener('mouseenter', () => {
+    document.querySelector('.men').style.display = "flex";
+    gsap.fromTo('.men',
+        {scaleY: 0, scaleX: 0.5 },
+        {
+        scaleY: 1,
+        scaleX: 1,
+        duration: 0.9,
+        ease: "elastic.out(1, 0.5)"
+    })
+})
+
+document.querySelector('.men-btn').addEventListener('mouseleave', () => {
+    document.querySelector('.men').style.display = "none";
+})
+
+document.querySelector('.women-btn').addEventListener('mouseenter', () => {
+    document.querySelector('.women').style.display = "flex";
+    gsap.fromTo('.women',
+        {scaleY: 0, scaleX: 0.5 },
+        {
+        scaleY: 1,
+        scaleX: 1,
+        duration: 0.9,
+        ease: "elastic.out(1, 0.5)"
+    })
+})
+
+document.querySelector('.women-btn').addEventListener('mouseleave', () => {
+    document.querySelector('.women').style.display = "none";
+})
+
+document.querySelector('.kids-btn').addEventListener('mouseenter', () => {
+    document.querySelector('.kids').style.display = "flex";
+    gsap.fromTo('.kids',
+        {scaleY: 0, scaleX: 0.5 },
+        {
+        scaleY: 1,
+        scaleX: 1,
+        duration: 0.9,
+        ease: "elastic.out(1, 0.5)"
+    })
+})
+
+document.querySelector('.kids-btn').addEventListener('mouseleave', () => {
+    document.querySelector('.kids').style.display = "none";
+})
+
+document.querySelector('.sale-btn').addEventListener('mouseenter', () => {
+    document.querySelector('.sale').style.display = "flex";
+    gsap.fromTo('.sale',
+        {scaleY: 0, scaleX: 0.5 },
+        {
+        scaleY: 1,
+        scaleX: 1,
+        duration: 0.9,
+        ease: "elastic.out(1, 0.5)"
+    })
+})
+
+document.querySelector('.sale-btn').addEventListener('mouseleave', () => {
+    document.querySelector('.sale').style.display = "none";
 })
