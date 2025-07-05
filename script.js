@@ -1,11 +1,20 @@
 const introVideo = document.querySelector('.intro');
 const main = document.querySelector('#main');
 
-document.addEventListener('mousemove', function(dets) {
-    gsap.to('#cursor', {
-        x: dets.x - 5,
-        y: dets.y - 5,
-        duration: 0.6,
+
+// document.addEventListener('mousemove', function(dets) {
+//     gsap.to('#cursor', {
+//         x: dets.x - 5,
+//         y: dets.y - 5,
+//         duration: 0.6,
+//     })
+// })
+
+document.querySelector('.view-more').addEventListener('mouseenter', () => {
+    gsap.from('.arrow',{
+        x: -40,
+        opacity: 0,
+        duration: 0.8,
     })
 })
 
