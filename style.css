@@ -108,7 +108,29 @@ input:focus{
     gap: 20px
 }
 
-.page1 h1{
+.slogan-top{
+    position: absolute;
+    top: 15%;
+    font-family: sans-serif;
+    color: rgba(224, 254, 83);
+    mix-blend-mode: add;
+    height: 40%;
+    width: 30%;
+}
+
+.slogan-top h2{
+    font-weight: 300;
+    font-size: 4vw;
+    color: rgba(224, 254, 83);
+}
+
+.slogan-top h1{
+    font-weight: 500;
+    font-size: 6vw;
+    line-height: 0.9em;
+}
+
+.slogan-bottom h1{
     padding: 3%;
     position: absolute;
     word-break: break-word;
@@ -132,6 +154,11 @@ input:focus{
     font-size: x-large;
     position: absolute;
     bottom: 5%;
+}
+
+.page1 .view-more:hover{
+    background-color: black;
+    color: white;
 }
 
 .page2{

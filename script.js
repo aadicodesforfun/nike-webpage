@@ -70,17 +70,23 @@ tl.from('.right i',{
     stagger: 0.2,
 },"-=1")
 
-tl.from('.page1 h1', {
+tl.from('.slogan-bottom h1', {
     x: 200,
     opacity: 0,
     duration: 1.5,
     ease: 'bounce.out'
-})
+},"-=1")
 
 gsap.from('.page1 .view-more', {
     scale: 0.5,
-    // x: -400,
     opacity: 0,
     duration: 1,
     delay: 2, // make it 10 when the intro video is present or else 2
+},)
+
+gsap.from('.slogan-top', {
+    opacity: 0,
+    x: -400,
+    duration: 1,
+    delay: 2, //make it 10 when the intro video is present
 })
