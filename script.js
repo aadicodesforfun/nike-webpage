@@ -9,6 +9,13 @@ const main = document.querySelector('#main');
 //     })
 // })
 
+gsap.to('.elem .moving',{
+    translate: "-100%",
+    duration: 6, 
+    repeat: -1,
+    ease: "linear",
+})
+
 document.querySelector('.view-more').addEventListener('mouseenter', () => {
     gsap.from('.arrow',{
         x: -40,
@@ -178,4 +185,26 @@ document.querySelector('.sale-btn').addEventListener('mouseenter', () => {
 
 document.querySelector('.sale-btn').addEventListener('mouseleave', () => {
     document.querySelector('.sale').style.display = "none";
+})
+
+gsap.from('.page2', {
+    y: 100,
+    scale: 0.6,
+    scrollTrigger:{
+        trigger: ".page2",
+        markers: true,
+        scrub: true,
+        stagger: 0.3,
+        start: "top 90%",
+        end: "top 50%"
+    }
+})
+
+let elems = document.querySelectorAll('.elem');
+let page2 = document.querySelector('.page2');
+elems.forEach(function(el){
+    el.addEventListener('mouseenter', ()=>{
+        let bgImage = el.getAttribute('data-img');
+        page2.style.backgroundImage = `url(${bgImage})`;
+    })
 })
