@@ -366,6 +366,7 @@ input:focus{
 
 .elem:hover .move{
     transform: scaleY(1);
+    transition: all ease 0.5s;
 }
 
 .elem h2{

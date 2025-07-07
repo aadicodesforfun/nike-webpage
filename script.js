@@ -30,23 +30,23 @@ function mainPageAppears(){
     nav.style.display = "flex";
 }
 
-main.style.display = 'block' // uncomment this to play the intro video
+// main.style.display = 'block' // comment this to play the intro video
 
 let tl = gsap.timeline();
 
-// tl.to(introVideo, {
-//     delay: 1.5,
-//     duration: 6,
-//     onStart: () => {
-//         introVideo.play();
-//     }
-// })
+tl.to(introVideo, {
+    delay: 1.5,
+    duration: 6,
+    onStart: () => {
+        introVideo.play();
+    }
+})
 
-// tl.to(introVideo, {
-//     opacity: 0,
-//     duration: 1,
-//     onComplete: mainPageAppears,
-// })
+tl.to(introVideo, {
+    opacity: 0,
+    duration: 1,
+    onComplete: mainPageAppears,
+})
 
 tl.from('#main', {
     filter: "blur(10px)",
@@ -66,7 +66,7 @@ tl.from('.left',{
     opacity: 0,
 },"-=0.5")
 
-tl.from('.middle li', {
+tl.from('.middle div', {
     y: 40, 
     duration: 1, 
     opacity: 0,
@@ -96,14 +96,14 @@ gsap.from('.page1 .view-more', {
     scale: 0.5,
     opacity: 0,
     duration: 1,
-    delay: 2, // make it 10 when the intro video is present or else 2
+    delay: 10, // make it 10 when the intro video is present or else 2
 },)
 
 gsap.from('.slogan-top', {
     opacity: 0,
     y: 60,
     duration: 1,
-    delay: 2, //make it 10 when the intro video is present
+    delay: 10, //make it 10 when the intro video is present
 })
 
 // add event listerners for the menu 
@@ -192,7 +192,6 @@ gsap.from('.page2', {
     scale: 0.6,
     scrollTrigger:{
         trigger: ".page2",
-        markers: true,
         scrub: true,
         stagger: 0.3,
         start: "top 90%",
